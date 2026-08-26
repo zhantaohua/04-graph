@@ -1,0 +1,42 @@
+# ===== 模型权重（绝不进 git）=====
+*.bin
+*.safetensors
+*.pth
+*.pt
+*.pkl
+*.pickle
+*.onnx
+*.ckpt
+*.h5
+*.pb
+
+# ===== 数据集 / 大文件 =====
+*.arrow
+*.txt
+*.csv
+*.npy
+*.npz
+*.zip
+*.tar
+*.gz
+data/
+dataset/
+datasets/
+cache/
+
+# ===== Python / 环境 =====
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+env/
+.conda/
+
+# ===== 系统文件 =====
+.DS_Store
+Thumbs.db
+
+# 环境变量 / 密钥（绝不进 git）
+.env
+.env.local
+*.env

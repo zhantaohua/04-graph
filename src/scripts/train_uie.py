@@ -97,9 +97,9 @@ from pprint import pprint
 #电商
 # 请帮我推荐一款小米12s ultra的运行内存8G+128GB,颜色为冷杉绿?
 # 意图识别，公式：（商品_     运行内存_    颜色_冷杉绿）   
-input = ["小米12S Ultra 骁龙8+旗舰处理器 徕卡光学镜头 2K超视感屏 120Hz高刷 67W快充 8GB+128GB 冷杉绿 5G手机", "小米12S Ultra 骁龙8+旗舰处理器 徕卡光学镜头 2K超视感屏 120Hz高刷 67W快充 8GB+256GB 经典黑 5G手机"]
+input = ["小米12S Ultre的机身内存是多少"]
 ie = UIEPredictor(model='uie-base', schema=[], task_path=config.CHECKPOINT_DIR/"uie" / 'model_best')
-schema = ['商品', '颜色', '运行内存']
+schema = ['商品', "属性"]
 ie.set_schema(schema)
 pprint(ie(input))
 """

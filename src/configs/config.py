@@ -6,7 +6,7 @@ ROOT_DIR = Path(__file__).parent.parent.parent
 DATA_DIR = ROOT_DIR / "data"
 PRE_TRAINED_DIR = ROOT_DIR / "pretrained"
 CHECKPOINT_DIR = ROOT_DIR / "checkpoint"
-
+WEB_STATIC_DIR = ROOT_DIR / "src" / "web" / "static"
 MYSQL_CONFIG = {
     'host': 'localhost',
     'port': 3306,
@@ -53,3 +53,10 @@ SCHEMA=[
     "散热方式",
     "解锁方式"
 ]
+
+MAX_LENGTH = 128
+BATCH_SIZE = 32
+EPOCHS = 10
+LEARNING_RATE = 1e-5
+TEST_SIZE = 0.2
+RANDOM_STATE = 42

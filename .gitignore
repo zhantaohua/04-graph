@@ -1,42 +1,13 @@
-# ===== 模型权重（绝不进 git）=====
-*.bin
-*.safetensors
-*.pth
-*.pt
-*.pkl
-*.pickle
-*.onnx
-*.ckpt
-*.h5
-*.pb
-
-# ===== 数据集 / 大文件 =====
-*.arrow
-*.txt
-*.csv
-*.npy
-*.npz
-*.zip
-*.tar
-*.gz
+# 训练数据 / 处理后的数据
 data/
-dataset/
-datasets/
-cache/
 
-# ===== Python / 环境 =====
-__pycache__/
-*.pyc
-.ipynb_checkpoints/
-venv/
-env/
-.conda/
+# 模型输出目录
+intent_classify/
+checkpoint/
 
-# ===== 系统文件 =====
-.DS_Store
-Thumbs.db
+# 预训练模型 / 外部库（太大）
+pretrained/
+external_lib/
 
-# 环境变量 / 密钥（绝不进 git）
-.env
-.env.local
-*.env
+# arrow 数据文件
+*.arrow
